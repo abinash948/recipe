@@ -1,0 +1,2 @@
+# recipe
+a small project
