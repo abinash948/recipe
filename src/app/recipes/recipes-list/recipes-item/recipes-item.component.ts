@@ -11,14 +11,8 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 })
 export class RecipesItemComponent implements OnInit {
   @Input() recipe: Recipe;
+  @Input() index: number;
   
-
-  constructor(private recipeService: RecipeService) { }
-
   ngOnInit(): void {
-  }
-
-  onSelected(){
-    this.recipeService.recipeSelected.emit(this.recipe);
   }
 }
